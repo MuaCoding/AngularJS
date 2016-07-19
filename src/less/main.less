@@ -1,0 +1,1362 @@
+*:not(input, textarea) {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+textarea,
+input::-webkit-input-placeholder {
+    color: gray !important;
+    line-height: 16px;
+}
+
+input:-moz-placeholder {
+    color: #D6D0CA !important;
+    // Mozilla Firefox 4 to 18 
+}
+
+input::-moz-placeholder {
+    color: #D6D0CA !important;
+    // / Mozilla Firefox 19+ /
+}
+
+input:-ms-input-placeholder {
+    color: #D6D0CA !important;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    outline: none;
+    display: inline-block;
+}
+
+select,
+input,
+textarea {
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.col-ms-7 {
+    width: 14.28%;
+}
+
+.col-ms-4 {
+    width: 25%;
+}
+
+.col-ms-3 {
+    width: 33%
+}
+
+.col-ws-3 {
+    width: 32%
+}
+
+.col-ms-5 {
+    width: 39.5%
+}
+
+.col-ms-2 {
+    width: 50%
+}
+
+///*****************首页*******************/
+.input-group {
+    display: block;
+    border-radius: 6px;
+    overflow: hidden;
+    .input-item {
+        position: relative;
+        display: block;
+        background-color: white;
+        .box-sizing(border-box);
+        &.padding-right {
+            padding-right: 10px;
+        }
+        &.padding-lg-right {
+            padding-right: 100px;
+        }
+        &.padding-sm-left {
+            padding-left: 70px;
+        }
+        &.padding-xs-left {
+            padding-left: 40px;
+        }
+        &.padding {
+            padding: 0 10px;
+        }
+        &.margin-bottom {
+            margin-bottom: 15px;
+        }
+        &.modify {
+            border-bottom: 1px solid #BDBDBD;
+        }
+        &.margin-lg-bottom {
+            margin-bottom: 20px;
+        }
+        &.border-radius {
+            border-radius: 6px;
+        }
+        .addon {
+            position: absolute;
+            display: block;
+            top: 2px;
+            left: 5px;
+            padding: 15px 5px;
+        }
+        .text-modify {
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .box-sizing(border-box);
+            &.border-left {
+                border-left: 2px solid #BDBDBD;
+            }
+            &.modify {
+                border-bottom: 1px solid #EBEBEB;
+            }
+            &.padding {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            span {
+                color: #bdbdbd;
+                .font-modify {
+                    margin-right: 5px;
+                }
+            }
+            small {
+                color: #bdbdbd;
+            }
+            .font-color {
+                color: #62C3DE;
+            }
+            .color-gray {
+                color: #000;
+            }
+            .highlight {
+                color: #000;
+            }
+        }
+        .sms-code {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            display: block;
+            padding: 10px 5px;
+            border: 1px solid #BDBDBD;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #BDBDBD;
+        }
+    }
+}
+
+//注意
+.mind {
+    display: block;
+    overflow: hidden;
+    .mind-title {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .mind-content {
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+.justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    >* {
+        display: table-cell;
+        width: 1%;
+        float: none!important;
+    }
+}
+
+.other {
+    .other-title {
+        margin-bottom: 10px;
+    }
+    .other-content {
+        font-size: 12px;
+        padding-bottom: 2px;
+    }
+}
+
+///*****************涉及行业*******************/
+.industry {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    background-color: white;
+    &.space {
+        margin-bottom: 50px;
+    }
+    .tags {
+        display: block;
+        padding: 6px 5px 3px;
+        .box-sizing(border-box);
+        .tag {
+            display: block;
+            padding: 6px 5px;
+            text-align: center;
+            border: 1px solid #EBEBEB;
+            .text-overflow();
+        }
+        .highlight {
+            border: 1px solid #00B5DA;
+            color: #00B4D6;
+        }
+    }
+}
+
+///**************re***译员级别*******************/
+.level {
+    position: relative;
+    display: block;
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+    .level-title {
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .fa {
+        position: relative;
+        top: 2px;
+        font-size: 20px;
+        color: #00B4D6;
+    }
+    .level-content {
+        position: relative;
+        display: block;
+        padding-left: 45px;
+        margin-bottom: 15px;
+        input {
+            padding: 5px;
+            width: 30%;
+            border: 1px solid #BDBDBD;
+            border-radius: 4px;
+        }
+    }
+    .addon {
+        margin-bottom: 50px;
+    }
+}
+
+///*****************译员列表*******************/
+.tab {
+    display: block;
+    overflow: hidden;
+    .tab-item {
+        display: inline-block;
+        .box-sizing(border-box);
+        &.tab-modify {
+            border: 2px solid #BDBDBD;
+            border-top: none;
+            border-bottom: none;
+        }
+        &.xs-padding {
+            padding: 5px;
+        }
+        &.sm-padding {
+            padding: 5px 5px 10px 5px;
+        }
+        &.xs-width {
+            width: 32%;
+        }
+        &.sm-width {
+            width: 35%;
+        }
+    }
+    .highlight {
+        color: #00B4D6;
+        border-bottom: 2px solid #00B4D6;
+    }
+}
+
+.interpreter-list {
+    display: block;
+    overflow: hidden;
+    .list-center {
+        display: block;
+        padding: 10px;
+    }
+    .list-item {
+        position: relative;
+        display: block;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: white;
+        border-radius: 6px;
+        .list-header {
+            display: block;
+            &.border-bottom-color {
+                border-bottom: 1px solid #EBEBEB;
+            }
+            .title {
+                display: block;
+                padding: 5px 0;
+                label {
+                    color: red;
+                }
+            }
+        }
+        .list-content-wrap {
+            position: relative;
+            display: block;
+            padding-top: 10px;
+            .list-content {
+                position: relative;
+                padding-left: 55px;
+                height: 55px;
+                display: block;
+                overflow: hidden;
+                cursor: pointer;
+                .avatar {
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    height: 55px;
+                    width: 55px;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    .box-sizing(border-box);
+                }
+                .list-info {
+                    display: block;
+                    overflow: hidden;
+                    font-size: 12px;
+                    .list-info-header {
+                        display: block;
+                        padding-top: 8px;
+                        margin-bottom: 15px;
+                        span {
+                            display: inline-block;
+                            padding: 0 5px;
+                        }
+                    }
+                    .list-info-content {
+                        display: block;
+                        span {
+                            display: inline-block;
+                            padding: 0 5px;
+                            &.modify {
+                                border: 2px solid #EBEBEB;
+                                border-top: none;
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+///****************************在线预约************************/
+.booking {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+    .booking-person {
+        position: relative;
+        display: block;
+        padding-bottom: 5px;
+        border-radius: 6px;
+        background-color: white;
+        .booking-header {
+            display: block;
+            padding: 0 45px;
+            span {
+                display: block;
+                padding: 10px 20px;
+                color: #62C3DE;
+                border-bottom: 1px solid #BDBDBD;
+            }
+        }
+        .booking-content {
+            position: relative;
+            display: block;
+            padding-top: 15px;
+            font-size: 12px;
+            overflow: hidden;
+            span {
+                position: relative;
+                top: -3px;
+            }
+            label {
+                color: #BDBDBD;
+            }
+        }
+        .booking-container {
+            position: relative;
+            display: block;
+            padding-top: 15px;
+            font-size: 12px;
+            overflow: hidden;
+            span {
+                color: #BDBDBD;
+            }
+        }
+    }
+    .booking-work {
+        display: block;
+        background-color: white;
+        border-radius: 6px;
+        overflow: hidden;
+        .booking-content {
+            display: block;
+            padding: 10px 15px 10px 40px;
+        }
+    }
+    .booking-contact {
+        display: block;
+        background-color: white;
+        border-radius: 6px;
+        overflow: hidden;
+        .title {
+            display: block;
+            padding: 15px;
+            color: #A9A9A9;
+        }
+        .contact-group {
+            display: block;
+            overflow: hidden;
+            .contact-item {
+                position: relative;
+                display: block;
+                padding: 15px 0;
+                margin: 0 10px;
+                overflow: hidden;
+                .box-sizing(border-box);
+                &.padding {
+                    padding-right: 75px;
+                    padding-left: 35px;
+                }
+                &.padding-both {
+                    padding-right: 100px;
+                    padding-left: 50px;
+                }
+                &.padding-left {
+                    padding-left: 35px;
+                }
+                &.padding-xs-left {
+                    padding-left: 50px;
+                }
+                &.padding-sm-left {
+                    padding-left: 65px;
+                }
+                &.padding-lg-left {
+                    padding-left: 90px;
+                }
+                &.modify {
+                    border-bottom: 1px solid #EBEBEB;
+                }
+                .name {
+                    position: absolute;
+                    top: 14px;
+                    left: 0;
+                    display: block;
+                }
+                .woman {
+                    position: absolute;
+                    top: 14px;
+                    right: 0;
+                    color: #A9A9A9;
+                }
+                .man {
+                    position: absolute;
+                    top: 14px;
+                    right: 45px;
+                    color: #BDBDBD;
+                }
+                .sms-code {
+                    position: absolute;
+                    top: 5px;
+                    right: 0;
+                    display: block;
+                    padding: 10px;
+                    border: 1px solid #EBEBEB;
+                    font-size: 12px;
+                    color: #B3B3B3;
+                }
+                .contact-item-title {
+                    display: block;
+                    margin-top: 15px;
+                }
+                .contact-item-content {
+                    position: relative;
+                    display: block;
+                    margin-top: 15px;
+                    .fa {
+                        position: relative;
+                        top: 2px;
+                        width: 20px;
+                        font-size: 18px;
+                        color: #62C3DE;
+                    }
+                }
+                .highlight {
+                    color: #000;
+                }
+            }
+        }
+    }
+    .policy {
+        display: block;
+        padding: 0 10px;
+        margin-bottom: 60px;
+        .policy-content {
+            position: relative;
+            display: block;
+            margin-bottom: 10px;
+            span {
+                color: #79AAE3;
+            }
+            .fa {
+                position: relative;
+                top: 2px;
+                width: 20px;
+                font-size: 18px;
+                color: #62C3DE;
+            }
+        }
+    }
+}
+
+.pay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    .total {
+        display: block;
+        padding: 15px 5px 5px;
+        overflow: hidden;
+        .box-sizing(border-box);
+        &.border-right {
+            border-right: 2px solid #BDBDBD;
+        }
+        span {
+            display: block;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        label {
+            color: red;
+        }
+    }
+    .topay {
+        display: block;
+        padding: 25px 5px;
+    }
+}
+
+
+/***********************************编辑教育经历****************************************/
+
+.edit-certificate,
+.edit-basic,
+.edit-edu,
+.edit-work {
+    overflow: hidden;
+    background-color: white;
+    &.border-radius {
+        border-radius: 6px;
+    }
+    &.margin-bottom {
+        margin-bottom: 15px;
+    }
+    .edit-group {
+        position: relative;
+        display: block;
+        padding: 15px 0 0 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        .edit-header {
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .edit-item {
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            &.padding {
+                padding-right: 5px;
+            }
+            &.margin-left {
+                margin-left: 30px;
+            }
+        }
+        .edit-black {
+            color: #000;
+        }
+        .color-gray {
+            color: #BDBDBD;
+        }
+        .color-black {
+            color: #000;
+        }
+        .modify {
+            border-bottom: 1px solid #EBEBEB;
+        }
+    }
+    .edit-content {
+        display: block;
+        padding: 0 10px 10px 10px;
+        .edit-title {
+            display: block;
+            padding: 15px 0;
+            color: #00B5DA;
+            border-bottom: 1px solid #EBEBEB;
+        }
+        .edit-list {
+            position: relative;
+            display: block;
+            margin-top: 15px;
+            margin-left: 15px;
+            &.padding-sm-left {
+                padding-left: 65px;
+            }
+            &.padding-lg-left {
+                padding-left: 90px;
+            }
+            .text-field {
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+            }
+        }
+        .color-gray {
+            color: #BDBDBD;
+        }
+    }
+    .edit-container {
+        display: block;
+        overflow: hidden;
+        padding-left: 45px;
+        margin-bottom: 20px;
+        width: 85%;
+        .img-wrap {
+            position: relative;
+            display: block;
+            padding: 0 5px 5px 0;
+            height: 82px;
+            width: 82px;
+        }
+    }
+}
+
+
+/******************************************译员详情（resume）简历*******************************************/
+
+//**********头像**********/
+.avatar-wrap {
+    position: relative;
+    display: block;
+    padding-bottom: 15px;
+    &.padding-top {
+        padding-top: 15px;
+    }
+    .avatar {
+        position: relative;
+        display: inline-block;
+        width: 95px;
+        height: 90px;
+        imageview {
+            border-radius: 100%;
+        }
+    }
+    .avatar-info {
+        display: block;
+        padding-top: 15px;
+        width: 100%;
+    }
+}
+
+.detail {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+    .detail-header {
+        display: block;
+        padding: 10px 0;
+        &.modify {
+            border-bottom: 1px solid #EBEBEB;
+        }
+        span {
+            color: #62C3DE;
+        }
+        label {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        b {
+            color: red;
+        }
+        .font-color {
+            color: #00B4DC;
+        }
+    }
+    .basic-backgroup {
+        position: relative;
+        display: block;
+        padding: 15px;
+        overflow: hidden;
+        background-color: white;
+        .box-sizing(border-box);
+    }
+    .basic-info {
+        position: relative;
+        display: block;
+        padding: 10px;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 6px;
+        .basic-content {
+            position: relative;
+            display: block;
+            font-size: 12px;
+            .basic-content-item {
+                position: relative;
+                display: block;
+                margin: 0 55px;
+                span {
+                    display: block;
+                    padding: 10px 0;
+                }
+                label {
+                    position: relative;
+                    display: inline-block;
+                    margin: 0 3px;
+                    top: -3px;
+                }
+                &.modify {
+                    border-bottom: 2px solid #EBEBEB;
+                }
+            }
+            .font-size {
+                font-size: 14px;
+            }
+            .basic-content-skill {
+                position: relative;
+                display: block;
+                margin: 0 20px;
+                padding: 10px 0;
+                &.modify {
+                    border: 1px dashed #BDBDBD;
+                    border-left: none;
+                    border-right: none;
+                }
+                .skill {
+                    position: relative;
+                    display: block;
+                    margin-top: 5px;
+                    span {
+                        display: inline-block;
+                        padding: 0 5px;
+                    }
+                    label {
+                        position: relative;
+                        top: -3px;
+                    }
+                    b {
+                        color: #B3B3B3;
+                    }
+                    .border {
+                        border: 2px solid #BDBDBD;
+                        border-top: none;
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+        .exprience-content {
+            position: relative;
+            display: block;
+            .exprience-content-wrap {
+                position: relative;
+                display: block;
+                padding-left: 20px;
+                &.margin-top {
+                    margin-top: 10px;
+                }
+                .circle {
+                    position: absolute;
+                    top: -2px;
+                    left: 0;
+                    .fa {
+                        color: #37B3D5;
+                    }
+                }
+                .line {
+                    position: absolute;
+                    left: 5.5px;
+                    top: 10px;
+                    height: 100%;
+                    width: 1px;
+                    background-color: #62C3DE;
+                }
+                .exprience-time {
+                    color: #B3B3B3;
+                    font-size: 12px;
+                }
+                .exprience-school {
+                    display: block;
+                    padding: 15px 0;
+                    span {
+                        display: inline-block;
+                        margin-top: 5px;
+                        font-size: 12px;
+                        color: #B3B3B3;
+                    }
+                    .padding-left {
+                        padding-left: 5px;
+                    }
+                    .padding-right {
+                        padding-right: 5px;
+                    }
+                    .border-right {
+                        border-right: 1px solid #B3B3B3;
+                    }
+                }
+                .exprience-company {
+                    display: block;
+                    padding: 15px 0;
+                    span {
+                        display: inline-block;
+                        padding: 0 5px;
+                    }
+                    .border-right {
+                        border-right: 1px solid #000;
+                    }
+                }
+                .duty {
+                    color: #B3B3B3;
+                    font-size: 12px;
+                }
+                .diploma {
+                    display: block;
+                    padding: 15px 0;
+                    border-bottom: 1px solid #BDBDBD;
+                    span {
+                        font-size: 12px;
+                    }
+                    .modify-color {
+                        color: #62C3DE;
+                    }
+                    .font-color {
+                        color: #B3B3B3;
+                    }
+                }
+                .evaluate {
+                    position: relative;
+                    display: block;
+                    overflow: hidden;
+                    padding: 5px 0;
+                    border-bottom: 1px solid #BDBDBD;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    .evaluate-item {
+                        display: block;
+                        overflow: hidden;
+                        margin-top: 10px;
+                        span {
+                            display: inline-block;
+                            color: #FCEE69;
+                        }
+                        .fa {
+                            color: #37B3D5;
+                        }
+                        .color {
+                            color: #BDBDBD;
+                        }
+                    }
+                }
+                .font-size {
+                    font-size: 12px;
+                }
+                .font-color {
+                    color: #B3B3B3;
+                }
+            }
+        }
+    }
+}
+
+
+/***********************************订单管理****************************************/
+
+.order-tab {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    .order-tab-item {
+        display: inline-block;
+        padding: 15px 5px;
+        width: 100%;
+        .box-sizing(border-box);
+        &.tab-modify {
+            border-right: 1px solid #D8D9D9;
+        }
+    }
+}
+
+.order {
+    display: block;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: white;
+    .box-sizing(border-box);
+    .modify {
+        border-bottom: 1px solid #EBEBEB;
+    }
+    .order-title {
+        padding: 10px;
+    }
+    .order-content {
+        position: relative;
+        display: block;
+        padding: 0 15px 15px 45px;
+        overflow: hidden;
+        .order-content-item {
+            display: block;
+            margin-top: 15px;
+        }
+        // .fa {
+        //     position: absolute;
+        //     top: 13px;
+        //     right: 0;
+        // }
+    }
+    .order-wait {
+        position: relative;
+        display: block;
+        padding: 15px;
+        .order-wait-content {
+            position: relative;
+            display: block;
+            padding-left: 45px;
+            .avatar {
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                height: 40px;
+                width: 40px;
+                border-radius: 4px;
+                overflow: hidden;
+                .box-sizing(border-box);
+            }
+            .order-wait-info {
+                position: relative;
+                display: block;
+                padding: 12px 0;
+                height: 40px;
+                .box-sizing(border-box);
+                // span {
+                //     position: absolute;
+                //     display: block;
+                //     top: 13px;
+                //     right: 20px;
+                // }
+            }
+        }
+        .order-wait-contact {
+            position: relative;
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            span {
+                margin: 5px 5px 0 0;
+            }
+        }
+    }
+    .order-btn {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        .box-sizing(border-box);
+        .button {
+            display: block;
+            padding: 20px 5px;
+            &.border-right {
+                border-right: 2px solid #EBEBEB;
+            }
+        }
+    }
+    .order-to-evaluate {
+        display: block;
+        padding: 15px;
+    }
+}
+
+
+/***********************************译员评价****************************************/
+
+.review {
+    position: relative;
+    display: block;
+    padding: 15px;
+    background-color: white;
+    overflow: hidden;
+    .box-sizing(border-box);
+    .review-item {
+        display: block;
+        margin-bottom: 20px;
+        overflow: hidden;
+        .review-header {
+            position: relative;
+            display: block;
+            padding-left: 65px;
+            padding-bottom: 10px;
+            height: 65px;
+            overflow: hidden;
+            .box-sizing(border-box);
+            &.modify {
+                border-bottom: 1px solid #BDBDBD;
+            }
+            .review-avatar {
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                height: 55px;
+                width: 55px;
+                img {
+                    display: block;
+                    border-radius: 50px;
+                }
+            }
+            .review-info {
+                display: block;
+                padding: 20px 0;
+            }
+        }
+        .textarea {
+            position: relative;
+            display: block;
+            textarea {
+                position: relative;
+                display: block;
+                padding: 10px;
+                margin-bottom: 10px;
+                width: 100%;
+                height: 140px;
+                border: 1px solid #BDBDBD;
+                border-radius: 3px;
+                .box-sizing(border-box);
+            }
+            .tip {
+                position: absolute;
+                bottom: 5px;
+                right: 10px;
+                font-size: 12px;
+                color: #ACACAC;
+            }
+        }
+        .review-skill {
+            position: relative;
+            display: block;
+            &.margin-bottom {
+                margin-bottom: 20px;
+            }
+            span {
+                display: inline-block;
+            }
+            .margin-right {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+
+/***********************************可预约日期****************************************/
+
+.choice-time {
+    position: relative;
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 75px;
+    overflow: hidden;
+    background-color: white;
+    .time-header {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        padding-bottom: 15px;
+        width: 100%;
+        background-color: white;
+        border-bottom: 2px solid #EBEBEB;
+        .time-title {
+            display: block;
+            padding: 15px 0;
+        }
+    }
+    .time-container {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        .container-title {
+            display: block;
+            padding: 15px;
+            color: #B3B3B3;
+        }
+        .day-wrap {
+            display: block;
+            padding: 0 5px 5px 5px;
+            width: 100%;
+            overflow: hidden;
+            &.margin-bottom {
+                margin-bottom: 30%;
+            }
+            .box-sizing(border-box);
+            .day {
+                display: block;
+                padding: 4px 5px;
+                .box-sizing(border-box);
+                .day-item {
+                    display: block;
+                    padding: 10px 5px;
+                    border-radius: 2px;
+                    .box-sizing(border-box);
+                }
+            }
+        }
+        .margin-left-1 {
+            margin-left: 14.28571%;
+        }
+        .margin-left-2 {
+            margin-left: 28.57142%;
+        }
+        .margin-left-3 {
+            margin-left: 42.85714%;
+        }
+        .margin-left-4 {
+            margin-left: 57.14287%;
+        }
+        .margin-left-5 {
+            margin-left: 71.42857%;
+        }
+        .margin-left-6 {
+            margin-left: 85.71428%;
+        }
+        .border-color {
+            border: 1px solid white;
+        }
+        .background-color {
+            border: 1px solid #EBEBEB;
+            background-color: #EBEBEB;
+        }
+        .busy {
+            color: white;
+            border: 1px solid #95d7e9;
+            background-color: #95d7e9;
+        }
+        .highlight {
+            color: #00B5DA;
+            border: 1px solid #00B5DA;
+            background-color: white;
+        }
+    }
+    .no-booking {
+        display: block;
+        overflow: hidden;
+        .time-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin: 10px;
+            background-color: #EBEBEB;
+            float: left;
+        }
+        span {
+            display: inline-block;
+            padding: 13px 5px 5px 5px;
+            float: left;
+        }
+    }
+    .time-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+}
+
+
+/***********************************城市选择****************************************/
+
+.choice {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: white;
+    .choice-header {
+        display: block;
+        overflow: hidden;
+        &.border-bottom {
+            border-bottom: 1px solid #EBEBEB;
+        }
+        .choice-search {
+            display: block;
+            padding: 15px;
+            .search {
+                position: relative;
+                display: block;
+                border: 1px solid #37B3D5;
+                display: block;
+                padding: 10px 10px 10px 30px;
+                border-radius: 4px;
+                .box-sizing(border-box);
+                input::-webkit-input-placeholder {
+                    text-align: center;
+                }
+                input {
+                    .box-sizing(border-box);
+                    height: 16px;
+                }
+                .fa {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    color: #37B3D5;
+                }
+            }
+        }
+    }
+    .choice-container {
+        position: relative;
+        display: block;
+        padding: 0 25px 15px 10px;
+        width: 100%;
+        overflow: hidden;
+        .box-sizing(border-box);
+        .hot {
+            display: block;
+            padding: 15px 0 10px 15px;
+            margin-left: -10px;
+            margin-right: -25px;
+            background-color: #eaeaea;
+            &.hot-color {
+                color: #ACACAC;
+            }
+            &.hot-border {
+                border-bottom: 1px solid #EBEBEB;
+                color: #000;
+            }
+            &.hot-padding {
+                padding-bottom: 15px;
+            }
+        }
+        .hot-border {
+            border-bottom: 1px solid #BDBDBD;
+        }
+        .hot-border-white {
+            border-bottom: 1px solid white;
+        }
+        .choice-container-item {
+            .choice-list-item {
+                display: block;
+                padding: 15px 0;
+                margin-left: 6px;
+                border-bottom: 1px solid #EBEBEB;
+            }
+            .highlight {
+                color: #37B3D5;
+            }
+        }
+    }
+    .letter {
+        position: fixed;
+        top: 117px;
+        right: 0;
+        span {
+            display: block;
+            padding: 5px 3px 0 3px;
+            text-align: center;
+            font-size: 13px;
+            color:@brand-primary;
+        }
+        .tip {
+            position: fixed;
+            left: 0;
+            right: 0;
+            width: 50px;
+            top: 50%;
+            margin: auto auto;
+            padding: 5px;
+            background-color: fade(black, 50%);
+            color: white;
+        }
+    }
+}
+
+
+/***********************************摸态框****************************************/
+
+.model {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: fade(black, 50%);
+}
+
+.model-container {
+    position: relative;
+    width: 250px;
+    margin: 45% auto;
+    background-color: #fff;
+    border: 1px solid #eee;
+    text-align: center;
+    border-radius: 8px;
+    .model-header {
+        display: block;
+        padding: 25px 10px;
+        text-align: center;
+        border-bottom: 2px solid #BDBDBD;
+    }
+    .model-btn {
+        display: block;
+        padding: 15px 5px;
+        text-align: center;
+    }
+}
